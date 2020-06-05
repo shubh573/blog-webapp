@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af0fd386-92d0-4d5d-9f15-73125350f3f4" name="Default Changelist" comment="Initial commit, templates, forms, database, user auth">
-      <change afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
+    <list default="true" id="af0fd386-92d0-4d5d-9f15-73125350f3f4" name="Default Changelist" comment="login and logout">
+      <change afterPath="$PROJECT_DIR$/users/templates/users/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,12 +97,20 @@
       <option name="project" value="LOCAL" />
       <updated>1591363967490</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="login and logout">
+      <created>1591372526047</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591372526047</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit, templates, forms, database, user auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit, templates, forms, database, user auth" />
+    <MESSAGE value="login and logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="login and logout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="181" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591108946308">
@@ -126,6 +129,14 @@
       <screen x="62" y="27" width="1304" height="741" />
     </state>
     <state x="62" y="31" width="1022" height="737" key="SettingsEditor/62.27.1304.741@62.27.1304.741" timestamp="1591109759987" />
+    <state x="318" y="159" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591372626310">
+      <screen x="62" y="27" width="1304" height="741" />
+    </state>
+    <state x="318" y="159" width="800" height="535" key="Vcs.Push.Dialog.v2/62.27.1304.741@62.27.1304.741" timestamp="1591372626310" />
+    <state x="437" y="212" width="561" height="430" key="git4idea.merge.GitMergeDialog" timestamp="1591372949364">
+      <screen x="62" y="27" width="1304" height="741" />
+    </state>
+    <state x="437" y="212" width="561" height="430" key="git4idea.merge.GitMergeDialog/62.27.1304.741@62.27.1304.741" timestamp="1591372949364" />
     <state x="448" y="337" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1591271653691">
       <screen x="62" y="27" width="1304" height="741" />
     </state>
