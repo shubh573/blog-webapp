@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af0fd386-92d0-4d5d-9f15-73125350f3f4" name="Default Changelist" comment="" />
+    <list default="true" id="af0fd386-92d0-4d5d-9f15-73125350f3f4" name="Default Changelist" comment="Initial commit, templates, forms, database, user auth">
+      <change afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,12 +19,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1clgzP1FTkq1owxZGqPyKPURPWo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,6 +37,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -81,17 +95,33 @@
       <option name="presentableId" value="Default" />
       <updated>1591108855970</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit, templates, forms, database, user auth">
+      <created>1591363967490</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591363967490</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit, templates, forms, database, user auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit, templates, forms, database, user auth" />
   </component>
   <component name="WindowStateProjectService">
     <state x="181" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591108946308">
       <screen x="62" y="27" width="1304" height="741" />
     </state>
     <state x="181" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.27.1304.741@62.27.1304.741" timestamp="1591108946308" />
-    <state x="501" y="184" width="424" height="491" key="FileChooserDialogImpl" timestamp="1591110674679">
+    <state x="501" y="184" width="447" height="491" key="FileChooserDialogImpl" timestamp="1591367969680">
       <screen x="62" y="27" width="1304" height="741" />
     </state>
-    <state x="501" y="184" width="424" height="491" key="FileChooserDialogImpl/62.27.1304.741@62.27.1304.741" timestamp="1591110674679" />
+    <state x="501" y="184" width="447" height="491" key="FileChooserDialogImpl/62.27.1304.741@62.27.1304.741" timestamp="1591367969680" />
+    <state x="559" y="323" width="327" height="303" key="Github.ShareDialog" timestamp="1591368166262">
+      <screen x="62" y="27" width="1304" height="741" />
+    </state>
+    <state x="559" y="323" width="327" height="303" key="Github.ShareDialog/62.27.1304.741@62.27.1304.741" timestamp="1591368166262" />
     <state x="62" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1591109759987">
       <screen x="62" y="27" width="1304" height="741" />
     </state>
