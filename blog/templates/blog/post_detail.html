@@ -5,7 +5,7 @@
             <div class="media-body">
                 <div class="article-metadata d-flex justify-content-around" >
                     <div class="mr-auto p-2">
-                    <a class="mr-auto" href="#">{{ object.author }}</a>
+                    <a class="mr-auto" href="{% url 'user-posts' object.author.username %}">{{ object.author }}</a>
                     <small class="text-muted">{{ object.date_posted|date:"F d, Y" }}</small></div>
                     {% if object.author == user %}
                         <div class="p-2">

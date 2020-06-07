@@ -19,14 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0fd386-92d0-4d5d-9f15-73125350f3f4" name="Default Changelist" comment="user profile and picture">
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_confirm_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_form.html" afterDir="false" />
+    <list default="true" id="af0fd386-92d0-4d5d-9f15-73125350f3f4" name="Default Changelist" comment="create, update &amp; delete post">
+      <change afterPath="$PROJECT_DIR$/blog/templates/blog/user_posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/posts.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
@@ -153,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591453359017</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="create, update &amp; delete post">
+      <created>1591465048068</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591465048068</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,7 +178,8 @@
     <MESSAGE value="Initial commit, templates, forms, database, user auth" />
     <MESSAGE value="login and logout" />
     <MESSAGE value="user profile and picture" />
-    <option name="LAST_COMMIT_MESSAGE" value="user profile and picture" />
+    <MESSAGE value="create, update &amp; delete post" />
+    <option name="LAST_COMMIT_MESSAGE" value="create, update &amp; delete post" />
   </component>
   <component name="WindowStateProjectService">
     <state x="181" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591108946308">
@@ -184,6 +190,10 @@
       <screen x="62" y="27" width="1304" height="741" />
     </state>
     <state x="501" y="184" width="447" height="491" key="FileChooserDialogImpl/62.27.1304.741@62.27.1304.741" timestamp="1591367969680" />
+    <state x="554" y="351" width="338" height="158" key="Github.Dialog.Accounts.Choose" timestamp="1591465088191">
+      <screen x="62" y="27" width="1304" height="741" />
+    </state>
+    <state x="554" y="351" width="338" height="158" key="Github.Dialog.Accounts.Choose/62.27.1304.741@62.27.1304.741" timestamp="1591465088191" />
     <state x="559" y="323" width="327" height="303" key="Github.ShareDialog" timestamp="1591368166262">
       <screen x="62" y="27" width="1304" height="741" />
     </state>
@@ -192,10 +202,10 @@
       <screen x="62" y="27" width="1304" height="741" />
     </state>
     <state x="62" y="31" width="1022" height="737" key="SettingsEditor/62.27.1304.741@62.27.1304.741" timestamp="1591109759987" />
-    <state x="318" y="159" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591453389168">
+    <state x="318" y="159" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591465077633">
       <screen x="62" y="27" width="1304" height="741" />
     </state>
-    <state x="318" y="159" width="800" height="535" key="Vcs.Push.Dialog.v2/62.27.1304.741@62.27.1304.741" timestamp="1591453389168" />
+    <state x="318" y="159" width="800" height="535" key="Vcs.Push.Dialog.v2/62.27.1304.741@62.27.1304.741" timestamp="1591465077633" />
     <state x="437" y="212" width="561" height="430" key="git4idea.merge.GitMergeDialog" timestamp="1591372949364">
       <screen x="62" y="27" width="1304" height="741" />
     </state>
