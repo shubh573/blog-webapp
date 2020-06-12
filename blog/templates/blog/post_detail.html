@@ -6,16 +6,37 @@
                 <div class="article-metadata d-flex justify-content-around" >
                     <div class="mr-auto p-2">
                     <a class="mr-auto" href="{% url 'user-posts' object.author.username %}">{{ object.author }}</a>
-                    <small class="text-muted">{{ object.date_posted|date:"F d, Y" }}</small></div>
+                    <small class="text-muted">{{ object.updated|date:"F d, Y" }}</small></div>
                     {% if object.author == user %}
                         <div class="p-2">
                             <a class="btn btn-secondary btn-sm mt-1 mb-1 p-2" href="{% url 'post-update' object.id %}">Update</a>
                             <a class="btn btn-danger btn-sm mt-1 mb-1 p-2" href="{% url 'post-delete' object.id %}">Delete</a>
                         </div>
+                    {% else %}
+                        <div class="p-2">
+                           <button class="btn btn-outline-info p-2" type="submit">Follow</button>
+                        </div>
                     {% endif %}
                 </div>
-                <h2 class="article-title">{{ object.title }}</h2>
+                <h3 class="article-title">{{ object.title }}</h3>
                 <p class="article-content">{{ object.content }}</p>
+                {% if post.image %}
+                    <img class="img-fluid img-thumbnail wp-post-image" src="{{ post.image.url }}">
+                {% endif %}
+                <div class="content">
+                    <form action="{% url 'like-post' %}" method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" name='post_id' value="{{post.id}}">
+                        <button class="btn btn-outline-info p-2" type="submit">
+                            {% if user.profile not in post.liked.all %}
+                                Like
+                            {% else %}
+                                Unlike
+                            {% endif %}
+                        </button>
+                        <strong>{{post.num_likes}} likes</strong>
+                    </form>
+                </div>
             </div>
     </article>
 

@@ -5,8 +5,11 @@
         <div class="media">
             <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
             <div class="media-body">
-                <h2 class="account-heading">{{ user.username }}</h2>
-                <p class="text-secondary">{{ user.email }}</p>
+                <h2 class="account-heading">{{ user.profile.first_name }} {{ user.profile.last_name }}</h2>
+                <h4 class="text-secondary">{{ user.username }}</h4>
+                <p class="text-secondary">{{ user.email }}<br>
+                {{ user.profile.date_of_birth }}<br>
+                {{ user.profile.bio }}</p>
             </div>
         </div>
         <form method="POST" enctype="multipart/form-data">
@@ -22,3 +25,8 @@
         </form>
     </div>
 {% endblock content %}
+
+
+#shubh123
+#testu123
+#testing3

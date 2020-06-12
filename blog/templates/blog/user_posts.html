@@ -1,16 +1,53 @@
 {% extends "blog/base.html" %}
 {% block content %}
-    <h1 class="mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
+    <div class="content-section ">
+        <div class="media d-flex justify-content-around">
+            <img class="rounded-circle account-img" src="{{ object.author.profile.image.url }}">
+            <div class="media-body">
+                <h2 class="account-heading mr-auto p-2">{{ object.author.profile.first_name }} {{ object.author.profile.last_name }}</h2>
+                <h4 class="text-secondary mr-auto">{{ view.kwargs.username }}</h4>
+                <p class="text-secondary mr-auto">Email {{ object.author.profile..email }}<br>
+                DOB {{ object.author.profile..date_of_birth }}<br>
+                BIO {{ object.author.profile..bio }}</p>
+            </div>
+            {% if object.author != user %}
+            <div class="p-2">
+                <button class="btn btn-outline-info p-2" type="submit">Follow</button>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <h2 class="mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h2>
     {% for post in posts %}
         <article class="media content-section">
             <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
             <div class="media-body">
                 <div class="article-metadata">
-                    <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
-                    <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+                    <div class="mr-auto p-2">
+                    <a class="mr-auto" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
+                    <small class="text-muted">{{ post.updated|date:"F d, Y" }}</small></div>
                 </div>
-                <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
+
+                <h3><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h3>
                 <p class="article-content">{{ post.content }}</p>
+                {% if post.image %}
+                    <img class="img-fluid img-thumbnail wp-post-image" src="{{ post.image.url }}">
+                {% endif %}
+                <div class="content">
+                    <form action="{% url 'like-post' %}" method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" name='post_id' value="{{post.id}}">
+                        <button class="btn btn-outline-info p-2" type="submit">
+                            {% if user.profile not in post.liked.all %}
+                                Like
+                            {% else %}
+                                Unlike
+                            {% endif %}
+                        </button>
+                        <strong>{{post.num_likes}} likes</strong>
+                    </form>
+                </div>
             </div>
         </article>
     {% endfor %}
@@ -35,4 +72,5 @@
         {% endif %}
 
     {% endif %}
+
 {% endblock content %}

@@ -19,16 +19,39 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0fd386-92d0-4d5d-9f15-73125350f3f4" name="Default Changelist" comment="pagination">
-      <change afterPath="$PROJECT_DIR$/users/templates/users/password_reset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/templates/users/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/templates/users/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/templates/users/password_reset_done.html" afterDir="false" />
+    <list default="true" id="af0fd386-92d0-4d5d-9f15-73125350f3f4" name="Default Changelist" comment="password reset">
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0002_post_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0003_auto_20200608_1259.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0004_auto_20200608_1459.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0005_auto_20200608_1503.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/post_pics/AI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/post_pics/AR.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/post_pics/Cloud-Computing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/post_pics/Virtual_Reality.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/post_pics/cybersecurity.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/post_pics/data_science.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/post_pics/data_science_c1bw3fr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/post_pics/deep_learning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/post_pics/java.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/post_pics/java_an3j9n9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/post_pics/py.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/migrations/0002_auto_20200608_1259.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/user_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/user_posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/default.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/default.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,8 +189,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591543238108</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="password reset">
+      <created>1591547287984</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591547287984</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -188,13 +221,18 @@
     <MESSAGE value="user profile and picture" />
     <MESSAGE value="create, update &amp; delete post" />
     <MESSAGE value="pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination" />
+    <MESSAGE value="password reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="password reset" />
   </component>
   <component name="WindowStateProjectService">
     <state x="181" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591108946308">
       <screen x="62" y="27" width="1304" height="741" />
     </state>
     <state x="181" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.27.1304.741@62.27.1304.741" timestamp="1591108946308" />
+    <state x="419" y="225" width="598" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591959052875">
+      <screen x="62" y="27" width="1304" height="741" />
+    </state>
+    <state x="419" y="225" width="598" height="403" key="#com.intellij.fileTypes.FileTypeChooser/62.27.1304.741@62.27.1304.741" timestamp="1591959052875" />
     <state x="501" y="184" width="447" height="491" key="FileChooserDialogImpl" timestamp="1591367969680">
       <screen x="62" y="27" width="1304" height="741" />
     </state>
@@ -211,10 +249,10 @@
       <screen x="62" y="27" width="1304" height="741" />
     </state>
     <state x="62" y="31" width="1022" height="737" key="SettingsEditor/62.27.1304.741@62.27.1304.741" timestamp="1591109759987" />
-    <state x="318" y="159" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591543285732">
+    <state x="318" y="159" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591547304476">
       <screen x="62" y="27" width="1304" height="741" />
     </state>
-    <state x="318" y="159" width="800" height="535" key="Vcs.Push.Dialog.v2/62.27.1304.741@62.27.1304.741" timestamp="1591543285732" />
+    <state x="318" y="159" width="800" height="535" key="Vcs.Push.Dialog.v2/62.27.1304.741@62.27.1304.741" timestamp="1591547304476" />
     <state x="437" y="212" width="561" height="430" key="git4idea.merge.GitMergeDialog" timestamp="1591372949364">
       <screen x="62" y="27" width="1304" height="741" />
     </state>
